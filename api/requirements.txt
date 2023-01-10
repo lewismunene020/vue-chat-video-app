@@ -1,0 +1,6 @@
+Flask
+pymongo
+sklearn
+numpy
+joblib
+opencv-python
