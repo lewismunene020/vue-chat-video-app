@@ -1,0 +1,32 @@
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.left {
+    grid-column: 1;
+}
+
+.middle {
+    grid-column: 2;
+}
+
+.right {
+    grid-column: 3;
+}
+
+@media screen and (max-width: 768px) {
+    .right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .left, .right {
+        display: none;
+    }
+}
